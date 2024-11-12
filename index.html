@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website HTML and CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" target="_blank" href="https://www.linkedin.com/in/adrielle-rivera-355ab3290/">Adrielle Rivera<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <!-- <li><a href="#">Products</a></li> -->
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Professional Virtual Assistance and Web Development Support.</h2>
+        <p>
+          Hi, I'm Adriele Rivera. With 2 years of experience as a virtual assistant in community management, social media coordination, and web development training, I bring a dedicated and professional touch to your digital needs. Let me help you simplify and strengthen your online presence.
+
+        </p>
+        <button><a target="_blank" href="files/Professional Resume - Adrielle Rivera.pdf">Download My Resume!</a></button>
+        <img src="image/Adrielle white bg.png" alt="Adrielle Rivera's Picture" class="profile-picture">
+      </div>  
+
+    </section>
+    <footer><p> &#169; All rights reserved to Adrielle Rivera 2024 &#8482;</p></footer>
+    
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+  </body>
+</html>
