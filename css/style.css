@@ -81,6 +81,10 @@ header .navbar {
   max-width: 600px;
   margin-top: 20px;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 5); 
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and alpha value as needed */
+  color: #ffffff; /* Keep the text color fully opaque */
+  padding: 15px;  
+  border-radius: 10px;
 }
 
 .hero-section .content button {
