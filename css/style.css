@@ -258,3 +258,21 @@ footer p span a:hover {
     display: none; /* Hide the image on extra small devices */
   }
 }
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.hero-section .content h2,
+.hero-section .content p {
+  animation: slideInFromBottom 1s ease-out forwards;
+  opacity: 0; /* Ensure starting opacity is 0 */
+}
+.hero-section .content p {
+  animation-delay: 0.5s;
+}
