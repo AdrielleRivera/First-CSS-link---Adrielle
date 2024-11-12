@@ -132,6 +132,16 @@ footer p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+footer p span {
+  color:orange;
+}
+
+footer p span a {
+  color:orange;
+}
+footer p span a:hover {
+  color:yellow;
+}
 
 @media (max-width: 768px) {
   header {
