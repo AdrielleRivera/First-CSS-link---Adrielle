@@ -250,6 +250,15 @@ footer p span a:hover {
   .profile-picture {
     display: none; /* Hide the image on mobile devices */
   }
+  #hamburger-btn {
+  z-index: 1000; /* High value to ensure it is on top of other elements */
+  position: relative; /* Ensure it respects the z-index */
+  }
+}
+header,
+.menu-links {
+  z-index: 10; /* Lower than the burger button */
+}
 }
 
 /* Media query for extra small screens */
